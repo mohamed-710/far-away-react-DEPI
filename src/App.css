@@ -1,38 +1,109 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Playwrite+PE:wght@100..400&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f0a500;
+  color: #fff;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+}
+.logo i 
+{
+ font-size: 45px;
+ color:#333;
+}
+.logo h1{
+  font-size: 2.5rem;
+  font-family: Monoton;
+  color:#5a3c2a;
+}
+.inputsection
+{
+  background: #fff3cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px 16px;
+  gap:20px;
+}
+p{
+  margin: 0;
+}
+.inputsection input[type=number]
+{
+ width: 50px;
+}
+main{
+  width: 100%;
+  height: calc(100vh - 200px);
+  background: #5a3c2a;
+  overflow: hidden; 
+}
+.item
+{
+  background:#fff3cd;
+}
+.inputsection button
+{
+  width: 60px;
+  background-color: #4eaa8d;
+  color: #fff;
+}
+.inputsection button:hover{
+ background-color: #0d9167;
+}
+footer {
+  background: #4eaa8d;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  height: 52px;
+}
+.inputs{
+  position: absolute;
+  top:-60px;
+  display: flex;
+  gap: 20px;
+}
+.inputs select,button{
+  background:#fff3cd ;
+  border-radius: 20px;
+  padding:8px;
+  transition: 0.3s;
+  border: none;
+  
+}
+.inputs button:hover{
+  background-color: #4eaa8d;
+  color:#fff
 }
 
-.App-link {
-  color: #61dafb;
+footer span{
+  font-size: 22PX;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
